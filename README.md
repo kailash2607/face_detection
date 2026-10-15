@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🏏 Indian Cricket Team Member Face Identification
 
 A machine learning and computer vision system that identifies a cricketer from a photo. It is trained on images of five Indian cricketers and classifies a new input image into the matching player's name, or reports "Unknown" when it is not confident.
@@ -113,10 +112,6 @@ python -m streamlit run app.py
 
 Use OpenCV 4.x, because version 5 does not include the Haar cascade detector used by the baseline code. If `face_model_sface.joblib` is present, the app uses it; otherwise it falls back to the baseline HOG model.
 
-## Screenshots
-
-_Add 3 screenshots: a correct identification, an "Unknown" result for a photo of someone else, and the "No face found" message._
-
 ## Limitations and Future Work
 
 - The system only knows the five players it was trained on (a closed-set classifier). Anyone else gets the closest match, or "Unknown" if the confidence is low. How reliably it rejects people outside the five has not been measured.
@@ -127,6 +122,3 @@ _Add 3 screenshots: a correct identification, an "Unknown" result for a photo of
 ## Dataset and Model Credit
 
 Training images come from the "Celebrity Database (332 Names)" dataset on Kaggle by mhmaslam. The face detector (YuNet) and face recognition network (SFace) come from the OpenCV Model Zoo. Images are used only for an academic project and should not be redistributed.
-=======
-# face_detection
->>>>>>> 3b120533cc1f9adb2e3ffb716ce9825c72aa990d
